@@ -23,5 +23,5 @@
 */
 
 bool task03(int a, int b, int c) {
-	return false;
+	return (a <= 0 || b <= 0 || c <= 0 || a + b <= c || a + c <= b || b + c <= a) ? false : true;
 }
